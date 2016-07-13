@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.orihuela.dnaiel.onotes.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputTitle"
+        android:paddingTop="@dimen/padding_nueva_nota_arriba"
+        android:paddingLeft="@dimen/padding_nueva_nota"
+        android:paddingStart="@dimen/padding_nueva_nota"
+        android:paddingRight="@dimen/padding_nueva_nota"
+        android:paddingEnd="@dimen/padding_nueva_nota">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ettitlever"
+            android:textSize="@dimen/letrasnuevanota"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:hint="@string/title"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputNote"
+            android:layout_below="@id/txtInputTitle"
+            android:paddingTop="@dimen/padding_nueva_nota_arriba"
+            android:paddingLeft="@dimen/padding_nueva_nota"
+            android:paddingStart="@dimen/padding_nueva_nota"
+            android:paddingRight="@dimen/padding_nueva_nota"
+            android:paddingEnd="@dimen/padding_nueva_nota">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etnotever"
+            android:textSize="@dimen/letrasnuevanota"
+            android:hint="@string/note"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_notif"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="@string/modify"
+            android:textSize="@dimen/letrasnuevanota"
+            android:textColor="@color/White"
+            android:id="@+id/bmodify" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="@string/delete"
+            android:textSize="@dimen/letrasnuevanota"
+            android:textColor="@color/White"
+            android:id="@+id/bdelete"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

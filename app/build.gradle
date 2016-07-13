@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'daniel'
+            keyPassword 'orihuela4'
+            storeFile file('C:/Users/dnaiel/Desktop/Keystore.jks')
+            storePassword 'orihuela4'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.orihuela.dnaiel.onotes"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.jakewharton:butterknife:8.1.0'
+
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+}

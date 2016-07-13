@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputTitle"
+        android:paddingTop="@dimen/padding_nueva_nota_arriba"
+        android:paddingLeft="@dimen/padding_nueva_nota"
+        android:paddingStart="@dimen/padding_nueva_nota"
+        android:paddingRight="@dimen/padding_nueva_nota"
+        android:paddingEnd="@dimen/padding_nueva_nota">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtTitle"
+            android:textSize="@dimen/letrasnuevanota"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:hint="@string/title"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputNote"
+        android:layout_below="@id/txtInputTitle"
+        android:paddingTop="@dimen/padding_nueva_nota_arriba"
+        android:paddingLeft="@dimen/padding_nueva_nota"
+        android:paddingStart="@dimen/padding_nueva_nota"
+        android:paddingRight="@dimen/padding_nueva_nota"
+        android:paddingEnd="@dimen/padding_nueva_nota">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtNote"
+            android:textSize="@dimen/letrasnuevanota"
+            android:hint="@string/note"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsave"
+        android:text="@string/save"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_notif"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bsave"
+        android:layout_marginBottom="@dimen/padding_notif"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewNotif"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_notif"
+            android:layout_marginStart="@dimen/padding_notif"
+            android:text="@string/notif"
+            android:textSize="@dimen/letrasnuevanota"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/radgroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radbtn1"
+                android:layout_weight="1"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radbtn2"
+                android:layout_weight="2"
+                android:text="@string/no"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

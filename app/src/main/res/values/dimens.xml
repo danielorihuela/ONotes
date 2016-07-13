@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="letrasnuevanota">20sp</dimen>
+    <dimen name="padding_nueva_nota">20sp</dimen>
+    <dimen name="padding_nueva_nota_arriba">10sp</dimen>
+    <dimen name="padding_notif">30sp</dimen>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ONotes</string>
+    <string name="action_settings">Settings</string>
+    <string name="plus">+</string>
+    <string name="notif">Notificación:</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="save">Guardar</string>
+    <string name="chose">Faltan campos por rellenar</string>
+    <string name="title">Título</string>
+    <string name="note">Nota</string>
+    <string name="modify">Modificar</string>
+    <string name="delete">Eliminar</string>
+    <string name="about_name">Acerca de</string>
+    <string name="about">Aplicación de notas para el curso</string>
+    <string name="restore_notif">Como recuperar las notificaciones</string>
+    <string name="restore_notif_text">Pulse el botón modificar de las notificaciones</string>
+    <string name="deleteAll">Borrar todas las notas</string>
+
+</resources>
